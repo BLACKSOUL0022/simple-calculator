@@ -39,7 +39,7 @@ body {
 }
 #svg_dark {
     position: relative;
-    top: -9px;
+    top: -10px;
     left: -15px;
 }
 #svg_dark_circle {
@@ -102,4 +102,13 @@ body {
 .button:active {
     margin-left: 5px;
     margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    #svg_dark {
+        position: relative;
+        top: -6px;
+        left: -15px;
+    }
 }
