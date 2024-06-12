@@ -24,7 +24,7 @@ dark_mode.addEventListener('click', function(){
         for (var i = 0; i < dark_mode_button.length; i++) {
             dark_mode_button[i].style.backgroundColor = "#749999";
         }
-        svg_dark.style.transform = 'translate(29px)';
+        svg_dark.style.transform = 'translate(30px)';
         svg_dark.style.transition = 'transform 1s';
         svg_dark_circle.style.fill = "#fff";
         dark_mode_active = true;
