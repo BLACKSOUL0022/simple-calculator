@@ -4,6 +4,7 @@ let dark_mode_button = document.getElementsByClassName("button");
 let dark_mode_active = false;
 let svg_dark = document.getElementById("svg_dark");
 let svg_dark_circle = document.getElementById("svg_dark_circle");
+
 function addCharacter(character) {
     var input = document.calculator.ans;
     if (input.value.length < 12) {
@@ -37,6 +38,21 @@ dark_mode.addEventListener('click', function(){
         svg_dark.style.transition = 'transform 1s';
         svg_dark_circle.style.fill = "#333";
         dark_mode_active = false;
-    }
+    };
 });
 
+
+function giveResult() {
+    let input = document.calculator.ans;
+    
+
+    if (input.value.length < 12) {
+        input.value = eval(document.calculator.ans.value);
+    } else {
+        input.value = eval(document.calculator.ans.value);
+        let inputNum = parseFloat(input.value);
+        let shortAns = inputNum.toExponential(5);
+        input.value = shortAns;
+        console.log(input.value);  
+    }
+}
