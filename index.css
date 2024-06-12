@@ -108,7 +108,7 @@ body {
 @media screen and (max-width: 1080px) {
     #svg_dark {
         position: relative;
-        top: -7px;
+        top: -8px;
         left: -15px;
     }
 }
